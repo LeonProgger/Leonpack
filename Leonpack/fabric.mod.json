@@ -3,17 +3,7 @@
   "id": "leonpack",
   "version": "1.0.0",
   "name": "Leonpack",
-  "description": "Мод от меня",
-  "authors": [
-    "1eonPr0"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net",
-    "sources": "https://github.com"
-  },
-  "license": "MIT",
   "icon": "pack.png",
-  "environment": "*",
   "entrypoints": {
     "main": [
       "net.leonpack.LeonMod"
@@ -21,7 +11,7 @@
   },
   "depends": {
     "fabricloader": ">=0.15.0",
-    "minecraft": "~26.1.1",
+    "minecraft": ">=26.1.1",
     "java": ">=21"
   }
 }
