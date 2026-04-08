@@ -9,16 +9,11 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Build Mod
+      - name: Force Build
         run: |
-          if [ ! -f gradlew ]; then
-            wget https://gradle.org
-            unzip gradle-8.7-bin.zip
-            ./gradle-8.7/bin/gradle build
-          else
-            chmod +x gradlew
-            ./gradlew build
-          fi
+          wget https://gradle.org
+          unzip gradle-8.7-bin.zip
+          ./gradle-8.7/bin/gradle build --stacktrace
       - uses: actions/upload-artifact@v4
         with:
           name: Leonpack-Mod
