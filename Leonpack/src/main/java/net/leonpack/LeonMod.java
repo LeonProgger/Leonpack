@@ -9,10 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class LeonMod implements ModInitializer {
-    // Звук
     public static final SoundEvent RELAX_GUITAR_SOUND = SoundEvent.of(Identifier.of("leonpack", "relax_guitar"));
-
-    // Предметы
     public static final Item BLOODY_SWORD = new SwordItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiersComponent(SwordItem.createAttributes(ToolMaterials.NETHERITE, 3, -2.4f)));
     public static final Item RELAX_GUITAR_DISC = new Item(new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(RELAX_GUITAR_SOUND));
     public static final Item LEON_ELYTRA = new Item(new Item.Settings().maxCount(1).rarity(Rarity.EPIC).glider());
